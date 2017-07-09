@@ -1,0 +1,11 @@
+<div *ngFor="let content of contents">
+  <h3>{{content.name}}</h3>
+  <button (click)="remove(content)">Remove</button>
+  <button (click)="view(content)">View</button>
+<hr/>
+</div>
+
+ <h3>New</h3>
+  <textarea rows="3" cols="60" [(ngModel)]="newContent.name"></textarea>
+  <br/>
+  <button (click)="create()">Create</button>

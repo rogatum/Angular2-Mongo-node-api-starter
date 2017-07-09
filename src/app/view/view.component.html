@@ -1,0 +1,11 @@
+<div *ngIf="!ready">
+loading...
+</div>
+<div *ngIf="ready">
+  <h2><a href="/">&lt;</a> / {{view.name}}</h2>
+
+  <hr>
+  <textarea rows="3" cols="60" [(ngModel)]="view.name">{{view.name}}</textarea>
+  <br/>
+  <button (click)="update()">Update</button>
+</div>
